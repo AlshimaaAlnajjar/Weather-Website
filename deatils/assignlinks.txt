@@ -1,0 +1,11 @@
+DEMO: https://routeweather.netlify.app/
+
+
+API Link : https://www.weatherapi.com/
+
+
+My API Link : http://api.weatherapi.com/v1/search.json?key=50c50ece38604c2d80081935241512&q=lond
+
+
+API Video : https://drive.google.com/file/d/1JoowcgTmmGnWyw97w8YMQp6B6QI8OLDH/view?usp=sharing
+

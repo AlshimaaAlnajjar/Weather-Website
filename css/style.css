@@ -1,0 +1,204 @@
+:root{
+    --darker-blue:#1e202b;
+    --baby-blue:#009ad8;
+    --dark-blue:#323544;
+}
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+@media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+  }
+  @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+  }
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+}
+body{
+    background-color: var(--darker-blue);
+    color: white;
+}
+a{
+    color: white !important;
+}
+.h6{
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.4px;
+}
+/* header style */
+.navbar-expand-lg{
+    padding: 20px 0 ;
+}
+.nav-link{
+    border:2px solid transparent;
+    border-radius: 20px;
+}
+.nav-link.active,.nav-link:hover{
+    color: var(--baby-blue) !important;
+}
+.navbar-collapse:not(.show) .nav-link:hover,
+.navbar-collapse:not(.show) .nav-link.active {
+  border: 2px solid var(--baby-blue); 
+}
+.navbar-collapse.show .navbar-nav{
+    background-color: #262936;
+    margin-top: 15px;
+    border-radius: 20px;
+    padding-block: 8px;
+}
+.navbar-collapse.show .navbar-nav .nav-item{
+    text-align: center;
+    padding-left: 0;
+    padding-block:7px ;
+    border-bottom:0.8px solid var(--dark-blue);
+}
+.navbar-collapse.show .navbar-nav .nav-item:last-child{
+    border-bottom:0px
+}
+.menu-icon:focus{
+    border: 1px solid var(--baby-blue);
+    color: var(--baby-blue);
+}
+/* main style */
+.hero{
+    background-image: url(../img/banner.png);
+    background-size: cover;
+    width: 100%;
+    min-height: 350px;
+    padding: 70px 0;
+}
+form input, form textarea, form select {
+    outline: none;
+    border: none;
+    padding: 10px;
+    border-radius: 30px;
+}
+.find-location {margin-bottom: 70px;}
+.find-location input[type="text"] ,
+.site-footer .subscribe-form input[type="text"] {
+    width: 100%;
+    padding: 14px 50px 14px 14px;
+    background: #1e202b;
+    color: white;
+}
+.find-location input[type="button"],
+.site-footer .subscribe-form input[type="submit"] {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    bottom: 5px;
+    padding: 0 20px;
+    border: none;
+    background: var(--baby-blue);
+    border-radius: 30px;
+    color: white;
+}
+
+
+.forecast-container {
+    background: #323544;
+    border-radius: 10px;
+    margin-top: -150px;
+    margin-bottom: 50px;
+}
+.forecast-container .forecast {
+    width: 33.33%;
+}
+.forecast-container .forecast .forecast-header {
+    background: rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    text-align: center;
+    font-weight: 400;
+}
+@media screen and (max-width: 990px) {
+    .forecast-container .forecast {
+        display: block;
+        width: 100%;
+        float: left;
+    }
+    .forecast-container .forecast.today {
+        display: block;
+        width: 100%;
+    }
+}
+.forecast-container .forecast.today .forecast-content {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.forecast-container .forecast.today .location {
+    font-size: 18px;
+    font-weight: 400;
+}
+.forecast-container .forecast .forecast-content .degree {
+    font-size: 24px;
+    font-size: 1.7142857143em;
+    color: white;
+    font-weight: 700;
+}
+.forecast-container .forecast.today .degree .num {
+    font-size: 90px;
+    margin-right: 30px;
+}
+.forecast-container .forecast.today .degree .forecast-icon {
+    margin-bottom: 20px;
+    height: 50px;
+}
+.custom {
+    color: #009ad8;
+    margin: 20px 0;
+}
+.forecast-container .forecast.today span {
+    margin-right: 20px;
+}
+.forecast-container .forecast.today span img {
+    margin-right: 5px;
+    vertical-align: middle;
+}
+.forecast-container .forecast:nth-child(even) {
+    background-color: #262936;
+}
+.forecast-container .forecast .forecast-content {
+    padding: 50px 20px 10px;
+    text-align: center;
+}
+
+
+/* footer style*/
+.site-footer {
+    background: #262936;
+    padding: 50px 0;
+}
+.site-footer .subscribe-form {
+    position: relative;
+}
+.site-footer .social-links a {
+    height: 40px;
+    width: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border-radius: 50%;
+    background: #1e202b;
+    font-size: 22px;
+}
+.site-footer .social-links a i{
+    color: var(--baby-blue);
+}
+.site-footer .social-links a:hover{
+    background: var(--baby-blue);
+}
+.site-footer .social-links a:hover i{
+    color: white;
+}
